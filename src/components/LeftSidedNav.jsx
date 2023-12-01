@@ -19,7 +19,7 @@ const LeftSidedNav = () => {
       },[]  
     )
     return (
-        <div className="text-xl font-semibold ">
+        <div className="text-xl font-semibold npm run de">
             <div>
             <h1>All Category {categories.length}</h1>
             {
