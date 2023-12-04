@@ -4,6 +4,8 @@ import Root from "../Layouts/Root";
 import Home from "../Pages/Home";
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
+import DetailsNews from "../Pages/DetailsNews";
+import PrivateRouter from "./PrivateRouter";
 
 
 
@@ -23,6 +25,10 @@ const myRoutes= createBrowserRouter([{
         {
             path:'/register',
             element:<Register></Register>
+        },
+        {
+            path:'/news/:news_id',
+            element:<PrivateRouter><DetailsNews></DetailsNews></PrivateRouter>
         }
     ]
 
